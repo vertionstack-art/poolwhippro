@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pool Whip Pros | Pool Service in Concord, CA</title>
+<meta name="description" content="Weekly pool cleaning, water chemistry, equipment repairs and green-pool clean-ups in Contra Costa County and Las Vegas. Call (925) 396-5419 for a free quote.">
+<meta name="theme-color" content="#0B2463">
+<meta property="og:title" content="Pool Whip Pros">
+<meta property="og:description" content="Licensed pool service in Contra Costa County and Las Vegas.">
+<meta property="og:image" content="img/hero.jpg">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --whip:#1D3FB0;      /* logo blue */
+  --deep:#0B2463;      /* deep end */
+  --berry:#E0262F;     /* strawberry */
+  --pool:#DDF3FA;      /* shallow water */
+  --pool-2:#EEF9FD;
+  --ink:#13213F;
+  --muted:#4B5A7A;
+  --line:#D6E3F0;
+  --white:#FFFFFF;
+  --display:'Bricolage Grotesque',system-ui,sans-serif;
+  --body:'Public Sans',system-ui,sans-serif;
+  --gutter:20px;
+  --max:1120px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--white);color:var(--ink);font:400 17px/1.55 var(--body);-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+:focus-visible{outline:3px solid var(--berry);outline-offset:3px;border-radius:6px}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font:700 17px/1 var(--body);text-decoration:none;border:0;cursor:pointer;-webkit-user-select:none;user-select:none}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-berry{background:var(--berry);color:#fff}
+.btn-white{background:#fff;color:var(--deep)}
+.btn-line{background:transparent;color:var(--deep);box-shadow:inset 0 0 0 2px var(--line)}
+@media (hover:hover){
+  .btn-berry:hover{background:#C51E27}
+  .btn-white:hover{background:var(--pool)}
+  .btn-line:hover{box-shadow:inset 0 0 0 2px var(--whip)}
+}
+
+/* Header */
+.top{position:absolute;top:0;left:0;right:0;z-index:10;padding-top:env(safe-area-inset-top)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;font:800 18px/1 var(--display)}
+.brand img{width:48px;height:48px}
+.top-call{display:flex;align-items:center;gap:8px;height:44px;padding:0 16px;border-radius:999px;background:#fff;color:var(--deep);font:700 15px/1 var(--body);text-decoration:none}
+.top-call svg{width:17px;height:17px}
+
+/* Hero */
+.hero{position:relative;color:#fff;background:var(--deep);overflow:hidden}
+.hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 30%}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(11,36,99,.55) 0%,rgba(11,36,99,.05) 30%,rgba(11,36,99,.55) 58%,rgba(11,36,99,.94) 88%)}
+.hero-body{position:relative;z-index:2;min-height:min(100svh,820px);display:flex;flex-direction:column;justify-content:flex-end;padding-top:110px;padding-bottom:84px}
+.rating{display:inline-flex;align-items:center;gap:8px;align-self:flex-start;padding:7px 14px 7px 10px;border-radius:999px;background:rgba(11,36,99,.72);font:600 14px/1 var(--body);text-decoration:none}
+.stars{color:#FFC93C;letter-spacing:1px;font-size:15px}
+.hero h1{margin-top:18px;font-weight:800;font-size:clamp(68px,19vw,176px);line-height:.86;letter-spacing:-.045em}
+.hero-lede{margin-top:20px;max-width:30ch;font-size:clamp(19px,2.4vw,23px);line-height:1.4;font-weight:500;color:#EAF1FF}
+.hero-ctas{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px}
+.hero-ctas .btn{flex:1 1 220px}
+@media (min-width:720px){.hero-ctas .btn{flex:0 0 auto}}
+
+/* The whipped-cream edge: the one decorative move on the page, borrowed from the logo */
+.cream{position:absolute;left:0;right:0;bottom:-1px;z-index:3;height:46px;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 46'%3E%3Cpath fill='%23fff' d='M0 46V24C6 12 18 8 30 14 36 2 54 0 62 12 70 4 88 4 94 16 102 8 114 10 120 24V46Z'/%3E%3C/svg%3E") repeat-x left bottom/120px 46px}
+
+/* Section rhythm */
+.sec{padding:72px 0}
+.sec-head{max-width:620px}
+.sec h2{font-weight:800;font-size:clamp(36px,7vw,60px);line-height:1;letter-spacing:-.035em}
+.sec-head p{margin-top:14px;color:var(--muted);font-size:18px}
+
+/* Weekly service: the main offer, given the most room */
+.weekly{margin-top:36px;display:grid;gap:0;border-radius:28px;overflow:hidden;background:var(--pool-2)}
+.weekly img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.weekly-body{padding:28px 22px 30px}
+.weekly h3{font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1.05}
+.weekly-body>p{margin-top:10px;color:var(--muted)}
+.ticks{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:10px}
+.ticks li{position:relative;padding-left:32px}
+.ticks li::before{content:"";position:absolute;left:0;top:3px;width:20px;height:20px;border-radius:50%;background:var(--whip) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5.5 10.5l3 3 6-7' fill='none' stroke='%23fff' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/20px}
+.ticks .extra{color:var(--muted)}
+.ticks .extra::before{background:#fff;box-shadow:inset 0 0 0 2px var(--line)}
+@media (min-width:860px){
+  .weekly{grid-template-columns:1.05fr 1fr;align-items:stretch}
+  .weekly img{aspect-ratio:auto;height:100%}
+  .weekly-body{padding:44px 44px 46px}
+}
+
+/* Other services: a plain list, not more cards */
+.more{margin-top:20px;display:grid;gap:0;border-top:1px solid var(--line)}
+.svc{display:grid;grid-template-columns:96px 1fr;gap:18px;align-items:start;padding:24px 0;border-bottom:1px solid var(--line)}
+.svc img{width:96px;height:96px;border-radius:20px;object-fit:cover}
+.svc-mark{width:96px;height:96px;border-radius:20px;background:var(--berry);display:grid;place-items:center}
+.svc-mark svg{width:44px;height:44px}
+.svc h3{font-size:23px;font-weight:800;letter-spacing:-.015em;line-height:1.1}
+.svc p{margin-top:6px;color:var(--muted);font-size:16px}
+.chips{margin-top:12px;display:flex;flex-wrap:wrap;gap:6px}
+.chips span{padding:6px 12px;border-radius:999px;background:var(--pool);color:var(--deep);font-size:14px;font-weight:600}
+@media (min-width:860px){
+  .more{grid-template-columns:1fr 1fr;column-gap:48px}
+  .svc{grid-template-columns:112px 1fr}
+  .svc img,.svc-mark{width:112px;height:112px}
+}
+
+/* Before / after */
+.ba-sec{background:var(--deep);color:#fff}
+.ba-sec .sec-head p{color:#C7D4F2}
+.ba{position:relative;margin-top:32px;border-radius:24px;overflow:hidden;width:100%;height:clamp(260px,40vw,440px);background:#0a1a48;touch-action:pan-y}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+.ba .before{clip-path:inset(0 calc(100% - var(--p,50%)) 0 0)}
+.ba-line{position:absolute;top:0;bottom:0;left:var(--p,50%);width:3px;margin-left:-1.5px;background:#fff;pointer-events:none}
+.ba-knob{position:absolute;top:50%;left:50%;width:52px;height:52px;margin:-26px 0 0 -26px;border-radius:50%;background:#fff;display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.3)}
+.ba-knob svg{width:26px;height:26px}
+.ba-tag{position:absolute;top:14px;padding:6px 12px;border-radius:999px;font:700 14px/1 var(--body);pointer-events:none}
+.ba-tag.b{left:14px;background:rgba(11,36,99,.85);color:#fff}
+.ba-tag.a{right:14px;background:#fff;color:var(--deep)}
+.ba input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:ew-resize}
+.ba-hint{margin-top:14px;color:#C7D4F2;font-size:15px}
+
+/* Reviews */
+.reviews{margin-top:32px;display:grid;gap:16px}
+.review{margin:0;padding:24px 22px;border-radius:24px;background:var(--pool-2)}
+.review .stars{display:block;font-size:17px}
+.review blockquote{margin:10px 0 0;font:600 21px/1.35 var(--display);letter-spacing:-.01em}
+.review figcaption{margin-top:14px;color:var(--muted);font-size:15px}
+.reviews-note{margin-top:16px;color:var(--muted);font-size:15px}
+.reviews-note a{color:var(--whip);font-weight:600}
+@media (min-width:860px){.reviews{grid-template-columns:repeat(3,1fr)}}
+
+/* Crew */
+.crew{display:grid;gap:32px;align-items:center}
+.faces{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.faces img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:16px;background:var(--pool)}
+@media (min-width:860px){.crew{grid-template-columns:1fr 1.1fr;gap:56px}}
+
+/* Quote + contact */
+.quote-sec{background:var(--pool)}
+.quote-grid{display:grid;gap:20px}
+.form{background:#fff;border-radius:28px;padding:28px 22px}
+.form h2{font-size:clamp(32px,6vw,46px)}
+.form>p{margin-top:8px;color:var(--muted)}
+.field{margin-top:16px;display:grid;gap:6px}
+.field label{font-weight:600;font-size:15px}
+.field input,.field select,.field textarea{width:100%;min-height:52px;padding:12px 14px;border:1.5px solid var(--line);border-radius:14px;background:#fff;color:var(--ink);font:400 16px/1.4 var(--body)}
+.field textarea{min-height:96px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--whip);box-shadow:0 0 0 3px rgba(29,63,176,.18)}
+.form .btn{width:100%;margin-top:22px}
+.form-msg{margin-top:12px;font-size:15px;color:var(--deep);font-weight:600;min-height:1em}
+.info{background:var(--deep);color:#fff;border-radius:28px;padding:28px 22px;display:grid;gap:24px;align-content:start}
+.info h3{font-size:15px;font-family:var(--body);font-weight:600;color:#AFC2EE}
+.info .big{display:block;margin-top:6px;font:700 22px/1.3 var(--display);text-decoration:none}
+.open{display:flex;align-items:center;gap:10px}
+.open i{width:10px;height:10px;border-radius:50%;background:#3DDC84}
+.areas{margin-top:8px;color:#DCE5FA}
+.map{border-radius:20px;overflow:hidden;background:#13307a;aspect-ratio:4/3}
+.map iframe{width:100%;height:100%;border:0;display:block}
+@media (min-width:900px){
+  .quote-grid{grid-template-columns:1.1fr 1fr}
+  .form,.info{padding:40px}
+}
+
+/* Footer */
+footer{background:var(--ink);color:#B9C5E0;padding:36px 0 120px;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center}
+footer .brand{font-size:17px}
+footer .brand img{width:40px;height:40px}
+@media (min-width:720px){footer{padding-bottom:40px}}
+
+/* Thumb bar on phones */
+.thumb{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--line)}
+.thumb .btn{flex:1;min-height:52px;padding:0 14px;font-size:16px}
+@media (min-width:720px){.thumb{display:none}}
+
+@media (prefers-reduced-motion:no-preference){
+  .hero h1,.hero-lede,.hero-ctas,.rating{animation:rise .6s cubic-bezier(.2,.7,.2,1) both}
+  .hero-lede{animation-delay:.08s}.hero-ctas{animation-delay:.14s}
+  @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="img/logo.png" alt="" width="48" height="48">Pool Whip Pros</a>
+    <a class="top-call" href="tel:+19253965419"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>Call</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <img class="hero-photo" src="img/hero.jpg" alt="Pool Whip Pros technician cleaning a backyard pool" width="1024" height="683" fetchpriority="high">
+    <div class="wrap hero-body">
+      <a class="rating" href="https://www.google.com/maps/search/?api=1&query=Pool+Whip+Pros+Concord+CA" target="_blank" rel="noopener"><span class="stars" aria-hidden="true">★★★★★</span>4.8 on Google, 42 reviews</a>
+      <h1>Pool Whip Pros</h1>
+      <p class="hero-lede">Licensed pool service in Contra Costa County and Las Vegas. We clean it, balance it and fix it, so you just swim.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-berry" href="#quote">Get a free quote</a>
+        <a class="btn btn-white" href="tel:+19253965419">Call (925) 396-5419</a>
+      </div>
+    </div>
+    <div class="cream" aria-hidden="true"></div>
+  </section>
+
+  <section class="sec" id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Everything your pool needs, from one crew.</h2>
+        <p>Choose the help you want. Most customers start with weekly service.</p>
+      </div>
+
+      <article class="weekly">
+        <img src="img/water-test.jpg" alt="Testing pool water chemistry" width="900" height="600" loading="lazy">
+        <div class="weekly-body">
+          <h3>Weekly full service</h3>
+          <p>One visit covers the cleaning, the chemistry and a look at your equipment. You never have to touch the net.</p>
+          <ul class="ticks">
+            <li>Water tested and balanced</li>
+            <li>Walls, steps and swim-outs brushed</li>
+            <li>Debris cleared from the surface and baskets</li>
+            <li>Water level and filter pressure checked</li>
+            <li>Equipment checked for leaks and faults</li>
+            <li class="extra">Filter cleaning every 6 months, billed separately</li>
+          </ul>
+        </div>
+      </article>
+
+      <div class="more">
+        <div class="svc">
+          <img src="img/after.jpg" alt="Pool water after a chemical treatment" width="250" height="250" loading="lazy" style="object-position:70% 50%">
+          <div>
+            <h3>Chemical-only service</h3>
+            <p>You do the cleaning, we keep the water right: chlorine, pH, alkalinity and stabilizer, plus algaecide when it's needed. Eco-friendly options available.</p>
+          </div>
+        </div>
+        <div class="svc">
+          <img src="img/equipment.jpg" alt="Pool filter and pump next to a pool" width="250" height="250" loading="lazy">
+          <div>
+            <h3>Repairs and installs</h3>
+            <p>When something stops working, we fix it or replace it.</p>
+            <div class="chips"><span>Heaters</span><span>Pumps</span><span>Filters</span><span>Plumbing</span><span>Electrical</span><span>Automation</span><span>Salt systems</span></div>
+          </div>
+        </div>
+        <div class="svc">
+          <img src="img/before.jpg" alt="Green pool before a clean-up" width="250" height="250" loading="lazy" style="object-position:30% 50%">
+          <div>
+            <h3>Green pool clean-up</h3>
+            <p>Neglected, storm-hit or gone green. We vacuum, brush, shock and treat the algae, then clean the filter until the water is clear again.</p>
+          </div>
+        </div>
+        <div class="svc">
+          <div class="svc-mark" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6c6 8 11 14 11 21a11 11 0 0 1-22 0c0-7 5-13 11-21z"/><path d="M19 29a5 5 0 0 0 5 5"/></svg></div>
+          <div>
+            <h3>Add-ons</h3>
+            <p>Filter cleaning, phosphate treatment to starve algae before it starts, and Deck-O-Seal replacement to keep water out of the pool-to-deck joint.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec ba-sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Green on Monday. Blue again after.</h2>
+        <p>A real clean-up by our crew. Slide to compare.</p>
+      </div>
+      <div class="ba" id="ba">
+        <img src="img/after.jpg" alt="The same pool after the clean-up, clear blue water" width="1000" height="390" loading="lazy">
+        <img class="before" src="img/before.jpg" alt="The pool before, covered in green algae" width="1000" height="390" loading="lazy">
+        <span class="ba-tag b">Before</span><span class="ba-tag a">After</span>
+        <div class="ba-line"><div class="ba-knob"><svg viewBox="0 0 26 26" aria-hidden="true"><path d="M10 7l-6 6 6 6" fill="none" stroke="#1D3FB0" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 7l6 6-6 6" fill="none" stroke="#E0262F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
+        <input type="range" min="0" max="100" value="50" aria-label="Compare before and after">
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>What customers say</h2>
+        <p>4.8 out of 5 on Google from 42 reviews.</p>
+      </div>
+      <div class="reviews">
+        <figure class="review"><span class="stars" aria-label="5 stars">★★★★★</span><blockquote>“Wesley was here within 45 minutes to replace it and get it all up and running.”</blockquote><figcaption>Jessica</figcaption></figure>
+        <figure class="review"><span class="stars" aria-label="5 stars">★★★★★</span><blockquote>“Great quick service at a great price!”</blockquote><figcaption>David</figcaption></figure>
+        <figure class="review"><span class="stars" aria-label="5 stars">★★★★★</span><blockquote>“They are always knowledgeable and helpful.”</blockquote><figcaption>Lena</figcaption></figure>
+      </div>
+      <p class="reviews-note"><a href="https://www.google.com/maps/search/?api=1&query=Pool+Whip+Pros+Concord+CA" target="_blank" rel="noopener">Read all reviews on Google</a></p>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:8px">
+    <div class="wrap crew">
+      <div>
+        <h2 style="font-weight:800;font-size:clamp(36px,7vw,56px);line-height:1;letter-spacing:-.035em">The people at your gate.</h2>
+        <p style="margin-top:14px;color:var(--muted);font-size:18px;max-width:44ch">Uniformed, local and the same faces week after week. If you have a question about your pool, you'll know who to ask.</p>
+        <a class="btn btn-line" href="tel:+19253965419" style="margin-top:24px">Talk to the team</a>
+      </div>
+      <div class="faces">
+        <img src="img/team-1.jpg" alt="Pool Whip Pros team member" width="250" height="250" loading="lazy">
+        <img src="img/team-2.jpg" alt="Pool Whip Pros team member" width="250" height="250" loading="lazy">
+        <img src="img/team-3.jpg" alt="Pool Whip Pros team member" width="250" height="250" loading="lazy">
+        <img src="img/team-4.jpg" alt="Pool Whip Pros team member" width="250" height="250" loading="lazy">
+        <img src="img/team-5.jpg" alt="Pool Whip Pros team member" width="250" height="250" loading="lazy">
+        <img src="img/team-6.jpg" alt="Pool Whip Pros team member" width="250" height="250" loading="lazy">
+        <img src="img/team-7.jpg" alt="Pool Whip Pros team member" width="250" height="250" loading="lazy">
+        <img src="img/team-8.jpg" alt="Pool Whip Pros team member" width="250" height="250" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="sec quote-sec" id="quote">
+    <div class="wrap quote-grid">
+      <form class="form" id="quote-form" novalidate>
+        <h2>Get a free quote</h2>
+        <p>Tell us about your pool and we'll get back to you with a price.</p>
+        <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name"></div>
+        <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel"></div>
+        <div class="field"><label for="f-city">City</label><input id="f-city" name="city" autocomplete="address-level2" placeholder="Concord, Walnut Creek, Las Vegas..."></div>
+        <div class="field"><label for="f-svc">What do you need?</label>
+          <select id="f-svc" name="service"><option>Weekly full service</option><option>Chemical-only service</option><option>Repair or install</option><option>Green pool clean-up</option><option>Something else</option></select></div>
+        <div class="field"><label for="f-msg">Anything we should know? (optional)</label><textarea id="f-msg" name="message"></textarea></div>
+        <button class="btn btn-berry" type="submit">Send my quote request</button>
+        <p class="form-msg" id="form-msg" role="status"></p>
+      </form>
+
+      <div class="info">
+        <div><h3>Call or text</h3><a class="big" href="tel:+19253965419">(925) 396-5419</a></div>
+        <div><h3>Hours</h3><span class="big open"><i aria-hidden="true"></i>Open 24 hours, every day</span></div>
+        <div><h3>Office</h3><a class="big" href="https://maps.google.com/?q=1015+Shary+Circle,+Concord,+CA+94518" target="_blank" rel="noopener">1015 Shary Circle<br>Concord, CA 94518</a>
+          <p class="areas">Serving Contra Costa County and Las Vegas.</p></div>
+        <div class="map"><iframe title="Map to Pool Whip Pros in Concord, CA" src="https://maps.google.com/maps?q=1015%20Shary%20Circle%2C%20Concord%2C%20CA%2094518&amp;z=13&amp;output=embed" loading="lazy"></iframe></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="img/logo.png" alt="" width="40" height="40">Pool Whip Pros Inc</a>
+    <span>Website preview by Vertion Stack</span>
+  </div>
+</footer>
+
+<nav class="thumb" aria-label="Quick actions">
+  <a class="btn btn-line" href="tel:+19253965419">Call</a>
+  <a class="btn btn-berry" href="#quote">Free quote</a>
+</nav>
+
+<script>
+(function(){
+  var ba=document.getElementById('ba'),r=ba.querySelector('input');
+  function set(){ba.style.setProperty('--p',r.value+'%')}
+  r.addEventListener('input',set);set();
+  var f=document.getElementById('quote-form');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    document.getElementById('form-msg').textContent='This is a preview, so the form isn’t connected yet. On the live site, requests go straight to your phone and email.';
+  });
+})();
+</script>
+</body>
+</html>
